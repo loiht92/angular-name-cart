@@ -1,0 +1,13 @@
+
+<h2>Progress Bar</h2>
+<!--//[style.backgroundColor]="backgroundColor": liên kết 1 giá trị kiểu duy nhất trong angular-->
+<!--// Đây là liên kết kiểu nội tuyến.-->
+<div class="progress-bar-container" [style.backgroundColor]="backgroundColor">
+
+<!--  //[ngStyle]: Liên kết kiểu nhiều giá trị.-->
+<!--  //https://alligator.io/angular/style-binding-ngstyle-angular/-->
+  <div class="progress"
+       [ngStyle]="{backgroundColor: progressColor,width: width + '%'}">
+  </div>
+</div>
+{{width + '%'}}
